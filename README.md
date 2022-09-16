@@ -13,7 +13,7 @@ The graphic below summarizes the data by the three city types: Rural, Suburban a
 
 ![image](https://github.com/dfwdamon/PyBer_Analysis/blob/main/Resources/analysis_1.png)
 
-(Resources/analysis_1.png)
+![image](Resources/analysis_1.png)
     
     <img src="Resources/analysis_1.png" alt="alt text" title="Data by City Type" />
 
