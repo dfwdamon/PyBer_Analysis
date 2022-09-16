@@ -7,56 +7,30 @@ The purpose of this project is to provide management with a summary of data from
 The first technical analysis looks at ride-sharing data by city type and includes a summary of the data.
 
 #### Results
-This analysis looked at the ride-sharing summary dataframe by city type.  It used `grouppby` function, `count` and `sum` methods on dataframe columns to get the total number of rides, total number of drivers and total fares for each city type. Then the average fair per ride and average fare per driver for each city type was obtained. 
+This analysis looked at the ride-sharing summary dataframe by city type.  It used `groupby` function, `count` and `sum` methods on dataframe columns to get the total number of rides, total number of drivers and total fares for each city type. Then the average fair per ride and average fare per driver for each city type was obtained. 
 
 The graphic below summarizes the data by the three city types: Rural, Suburban and Urban.
 
-![image](https://github.com/dfwdamon/PyBer_Analysis/blob/main/Resources/analysis_1.png)
-
 ![image](Resources/analysis_1.png)
-    
-    <img src="Resources/analysis_1.png" alt="alt text" title="Data by City Type" />
-
-
-
-/Users/damonphillips/Desktop/bootcamp/week_5_Matplotlib/PyBer_Analysis/Resources
 
 ### Analysis 2
-The second technical analysis looks at ride-sharing data by city type and includes a summary of the data.
+The second technical analysis looked at ride-sharing data of total fares by city type and includes a summary of the data.
 
 #### Results
-This analysis looked at the ride-sharing summary dataframe by city type.  It used `grouppby` function, `count` and `sum` methods on dataframe columns to get the total number of rides, total number of drivers and total fares for each city type. Then the average fair per ride and average fare per driver for each city type was obtained. 
+This analysis looked at the ride-sharing data for total fare by city type.  It used `grouppby()` function,= as well as `pivot()` and `resample()` functions on dataframe columns to get the total fares by city type.  A dataframe was created using the `loc` fucntion on a date range to show the sum of the fares by week.  
 
+The graphic below summarizes the total fares by city type. 
 
-####
+![image](Resources/Pyber_fare_summary.png)
 
+### Summary
+The following summarizes the differences in ride-sharing data among the different city types.  Rid-sharing data included the total rides, total drivers, total fares, average fare per ride and driver, and totla faire by city type. 
 
-he graphic below is the summary data for each city type: Rural, Suburvan and Urban.
+#### Summary Results
+Based on the analysis of the ride-sharing data provided, the following recommendations to management regarding any disparities among city types include the following: 
 
-![2017 Time](Resources/VBA_Challenge_2017.png)
+* Urban fares are higher than both suburban and rural fares.  These average 4x higher than rural fares for the period assessed. It is recommended to increase fares for rural and suburban ride types.
 
-###
-####
-There is a description of the differences in ride-sharing data among the different city types. Ride-sharing data include the total rides, total drivers, total fares, average fare per ride and driver, and total fare by city type. (7 pt)
-Summary:
+* The rides for rural areas are 10x lower than urban and 5x lower than suburban rides.  It is recommen ded to increse drivers for rural and suburban to capture possible opportunities.
 
-There is a statement summarizing three business recommendations to the CEO for addressing any disparities among the city types. (4 pt)
-
-
-###
-####
-
-
-ex
-See the screenshot images below of time in seconds the refactored code ran for each year. 
-
-![2017 Time](Resources/VBA_Challenge_2017.png)
-
-ex
-### Anaysis of Execution Times
-For tracking of the time the code ran, the Timer function was used `startTime = Timer` at the begining of the code just after the user inputs the desired year of analysis to run.  The `endTime = Timer` function terminated the time the code ran and a message box was used to show the resulting run times.  This code was `MsgBox "this code ran in " & (endTime - startTime) & " seconds for the year " & (yearValue)`.  
-
-
-
-
-
+* The average fare per ride and per driver is highest in rural city types.  While hte urban city type average fares are 20% to 50% lower than rural.  It is recommended that urban faires be increased to capture increased fares and normalize total drivers counts.
