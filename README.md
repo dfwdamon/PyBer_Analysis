@@ -1,4 +1,4 @@
-# PyBer_Analysis
+# Ride Share Analysis
 
 ### Overview of Analysis
 The purpose of this project is to provide management with a summary of data from a ride-sharing data set.  The analysis of the ride-sharing data will be conducted using Pandas and Matplotlib to create a multiple line-graph that shows the total weekly fares for each city type.  The goals is to provide insight on how the data differs by city type and how any differences can be used by decision makers. 
